@@ -45,3 +45,11 @@ print('------')
 for child in all_hello_elements[0].children:
     print(child.string)
 print('------')
+
+
+print('List items within the goodbye tag')
+goodbye_list_items = all_goodbye_elements[0].find_all('li')
+for item in goodbye_list_items:
+    for child in item.children:
+        print(child.string)
+print('------')
